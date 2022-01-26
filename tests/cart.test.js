@@ -6,9 +6,9 @@ describe("Cart features", () => {
 
     test('add to cart', async () => {
         await page.goto(process.env.TESTED_WEBSITE);
-        await page.waitForSelector('my_login_selector');
-        await page.type('my_login_selector', process.env.TEST_LOGIN);
-        await page.type('my_password_selector', process.env.TEST_PASSWORD);
+        await page.waitForSelector('#user-name');
+        await page.type('#user-name', process.env.TEST_LOGIN);
+        await page.type('#password', process.env.TEST_PASSWORD);
 
         // à compléter
 
